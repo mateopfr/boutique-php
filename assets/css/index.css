@@ -1,0 +1,23 @@
+.list-header {
+  display: flex;
+  column-gap: 1.5em;
+
+  & > * {
+    min-width: 90px;
+  }
+}
+
+.category-item {
+  display: flex;
+  column-gap: 1.5em;
+
+  & > * {
+    min-width: 90px;
+  }
+}
+
+.notification {
+  background-color: #555;
+  padding: 1em;
+  color: #fff;
+}
