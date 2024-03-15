@@ -50,10 +50,16 @@ if (isset($_FILES['myFile'])) {
         $randomStr = "";
         do {
             $randomStr = rand_char(12);
-        } while (isStrExiste($randomStr, $pdo));
+        } while (isStrExiste($randomStr, $pdo));    
 
         // On récupère l'extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
+
+        // Vérification de l'extension du fichier
+        if ($ext !== 'jpg' && $ext !== 'jpeg' && $ext !== 'png' && $ext !== 'webp') {
+            echo $ext;
+            redirect('/add-product.php?error=' . ProductError::COVER_REQUIRED);
+        }
 
         // Création du chemin pour l'image, et enregistrement à cet endroit là
         if($randomStr != null) {
