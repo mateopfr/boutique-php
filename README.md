@@ -8,7 +8,7 @@
 </center>
 
 ### Features :
-* Possibilité d'ajouter un produit avec une image stockée dans fichiers.
+* Possibilité à l'utilisateur d'upload une image pour la cover d'un produit
 * Génération d'un nom de fichier random, et vérification de ce nom pour éviter les doublons
     * Chaine de 12 caractères ASCII (33~126) aléatoire. (18 891 992 292 798 775 135 584 possibilités)
 * Gestion des erreurs pour les produits.
