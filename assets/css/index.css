@@ -21,3 +21,19 @@
   padding: 1em;
   color: #fff;
 }
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: rgb(0, 0, 0);
+  font-family: 'Exo 2', sans-serif;
+}
+
+ .notification { /* TODO: Absolument pas responsive, à refaire... */
+  position: fixed;
+    width: 100%;
+    top: 70px;
+}

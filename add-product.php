@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/classes/Categories.php';
 require_once __DIR__ . '/layout/header.php';
+require_once __DIR__ . '/functions/error.php';
+
 ?>
 
 <main>
@@ -8,7 +10,7 @@ require_once __DIR__ . '/layout/header.php';
 
     <?php if (isset($_GET['error'])) { ?>
     <p style="color: white; background-color: red;">
-        <?php echo categoryErrorMessage(intval($_GET['error'])); ?>
+        <?php echo productErrorMessage(intval($_GET['error'])); ?>
     </p>
     <?php } ?>
 

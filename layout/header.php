@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue !</title>
-    <link rel="stylesheet" href="/layout/style.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -20,7 +20,7 @@
         unset($_SESSION['message']);
         } ?>
 
-<body>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <header>
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
